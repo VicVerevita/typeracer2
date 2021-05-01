@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import {MenuItems} from "./MenuItems"
+import React, {Component} from 'react';
+import MenuItems from "./MenuItems"
 import "./Navbar.css"
 
 class Navbar extends Component {
@@ -18,10 +18,10 @@ class Navbar extends Component {
                                 </a>
                             </li>
                         )
-                    })}            
+                    })}
                 </ul>
             </nav>
-            )
+        )
     }
 }
 
