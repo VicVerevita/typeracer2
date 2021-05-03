@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import "./TextViewer.css";
-import TextFetch from "../TextFetch/TextFetch";
 
 class TextViewer extends Component {
     state = {
@@ -15,12 +14,12 @@ class TextViewer extends Component {
         this.setState({quote: data.quotes[0], loading: false});
         console.log(data.quotes[0]);
     }
-    
+
     render() {
         return (
             <div className="text-viewer-body">
                 <p>
-                    <TextFetch/>
+                    {/*TODO WRITE HERE THE TEXTFETCH HTML CODE*/}
                 </p>
             </div>
         );
