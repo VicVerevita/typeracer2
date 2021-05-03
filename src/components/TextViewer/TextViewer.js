@@ -19,9 +19,7 @@ class TextViewer extends Component {
 	render() {
 		return (
 			<div className="text-viewer-body">
-				<p>
-					<TextFetch />
-				</p>
+				<p></p>
 			</div>
 		);
 	}
