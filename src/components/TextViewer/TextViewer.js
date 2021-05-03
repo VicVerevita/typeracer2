@@ -17,10 +17,19 @@ class TextViewer extends Component {
 
     render() {
         return (
-            <div className="text-viewer-body">
-                <p>
-                    {/*TODO WRITE HERE THE TEXTFETCH HTML CODE*/}
-                </p>
+            <div>
+                <div className="text-viewer-body">
+                    {this.state.loading || !this.state.quote ? (
+                    <div className="text-loading-text"> loading... </div> ) : (
+                        <div className="text-viewer">{this.state.quote.text}</div>
+                    )}
+                </div>
+                <div className="author-viewer-body">
+                    {this.state.loading || !this.state.quote ? (
+                    <div className="author-loading-text"> loading... </div> ) : (
+                        <div className="author-viewer">{this.state.quote.author}</div>
+                    )}
+                </div>
             </div>
         );
     }
