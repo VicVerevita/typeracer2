@@ -62,7 +62,7 @@ class TextViewer extends Component {
 
 	overallTime() {
 		const endTime = Date.now();
-		return endTime - this.state.startTime;
+		return endTime - this.state.StartTime;
 	}
 
 	onSubmit = (e) => {
@@ -72,9 +72,9 @@ class TextViewer extends Component {
 		const inputLength = textinput.length;
 
 		if (textinput === this.state.Content) {
-			const lps = inputLength / totalTime;
+			var lps = inputLength / totalTime;
 			console.log(lps);
-
+			
 			this.setState({
 				LettersPerSecond: lps,
 				message:
@@ -83,6 +83,8 @@ class TextViewer extends Component {
 					" letters per second! Good job! Refresh the page for another try!",
 			});
 
+/*
+
 			let formData = new FormData();
 			formData.append("highscore", this.state.inputValue);
 			const url = "http://localhost/Front-End/typeracer2/backend/";
@@ -90,6 +92,7 @@ class TextViewer extends Component {
 				.post(url, formData)
 				.then((res) => console.log(res.data))
 				.catch((err) => console.log(err));
+*/
 
 		} else {
 			this.setState({
