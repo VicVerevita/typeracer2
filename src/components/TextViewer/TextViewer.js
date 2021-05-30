@@ -83,7 +83,7 @@ class TextViewer extends Component {
 					" letters per second! Good job! Refresh the page for another try!",
 			});
 
-/*
+
 
 			let formData = new FormData();
 			formData.append("highscore", this.state.inputValue);
@@ -92,7 +92,7 @@ class TextViewer extends Component {
 				.post(url, formData)
 				.then((res) => console.log(res.data))
 				.catch((err) => console.log(err));
-*/
+
 
 		} else {
 			this.setState({
