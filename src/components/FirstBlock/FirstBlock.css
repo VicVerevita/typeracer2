@@ -1,0 +1,7 @@
+.text-viewer {
+    padding: 10px;
+    height: 10vw;
+    border: 2px dashed #d0d0d0;
+    border-radius: 5px;
+    margin: 10px;
+}
