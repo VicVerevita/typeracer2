@@ -1,2 +1,2 @@
 # Typeracer Clone
-This is a typeracer clone, written in React.
+This is a Work-in-Progress typeracer clone, written in React.
